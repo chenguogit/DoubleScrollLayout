@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dream.use_doublescrolllayout.view.DoubleScrollLayout
+    android:id="@+id/double_scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <dream.use_doublescrolllayout.view.RefreshHeadLayout
+        android:id="@+id/refresh_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/drag_update_layout"/>
+    </dream.use_doublescrolllayout.view.RefreshHeadLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:text="头部"
+        android:background="#8f5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/test_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="test_btn"/>
+
+        <dream.use_doublescrolllayout.view.InnerRecycleView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</dream.use_doublescrolllayout.view.DoubleScrollLayout>
